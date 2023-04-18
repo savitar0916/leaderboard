@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreService", "ScoreService\ScoreService.csproj", "{22A79092-249A-4F21-8F70-0FE40C1731FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A79092-249A-4F21-8F70-0FE40C1731FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A79092-249A-4F21-8F70-0FE40C1731FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A79092-249A-4F21-8F70-0FE40C1731FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A79092-249A-4F21-8F70-0FE40C1731FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D6F11FB-9E57-4F96-9B3B-CEDA824485AF}
+	EndGlobalSection
+EndGlobal

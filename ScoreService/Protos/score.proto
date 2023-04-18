@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option csharp_namespace = "Score.Protos";
+//import "google/protobuf/wrappers.proto"; 
+package score;
+
+
+service Scorer {
+  rpc AddScrore(AddScroreRequest) returns (AddScroreResponse);
+  rpc GetTopPlayers(GetTopPlayersRequest) returns (GetTopPlayersResponse);
+  rpc Test(TestRequest)returns(TestResponse);
+}
+
+message AddScroreRequest {
+  string subject = 1;
+  string player = 2;
+  int32 score = 3;
+}
+
+message AddScroreResponse {
+  bool status = 1;
+  int32 statuscode = 2;
+  string message = 3;
+}
+
+message GetTopPlayersRequest {
+  string subject = 1;
+  int32 count = 2;
+}
+
+message GetTopPlayersResponse {
+  bool status = 1;
+  int32 statuscode = 2;
+  string message = 3;
+  repeated PlayerScore players = 4;
+}
+message PlayerScore {
+  string player = 1;
+  int32 score = 2;
+}
+
+message TestRequest{
+	string empty = 1;
+}
+
+message TestResponse{
+	string empty = 1;
+}
